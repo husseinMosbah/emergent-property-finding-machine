@@ -1,0 +1,169 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.terminal {
+  display: none;
+}
+.terminal.active {
+  display: block;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+input[type="submit"]{
+width:30%;
+background-color:#4CAF50;
+color:white;
+padding:14px 20px;
+margin:8px auto;
+display:block;
+border:none;
+border-radius:4px;
+cursor:pointer
+}
+
+input[type="submit"]:hover{
+background-color:#45a049
+}
+
+button{
+width:auto !important;
+white-space:normal !important;
+word-wrap:break-word !important;
+word-break:normal !important;
+hyphens:auto !important
+}
+
+
+.toggle-buttons {
+display:flex; 
+justify-content:center; 
+align-items:center; 
+margin-bottom:20px; 
+width:auto; 
+height:auto; 
+border:none; 
+outline:none; 
+font-size:16px; 
+font-weight:bold; 
+cursor:pointer; 
+transition:.3s ease-in-out
+}
+
+.toggle-buttons button{
+  width:auto; 
+  height:auto; 
+  padding:10px 20px; 
+  border:none; 
+  outline:none; 
+  font-size:16px; 
+  font-weight:bold; 
+  cursor:pointer; 
+  transition:.3s ease-in-out
+}
+
+.toggle-buttons button:first-child{
+  border-top-left-radius:.25rem; 
+  border-bottom-left-radius:.25rem
+}
+
+.toggle-buttons button:last-child{
+  border-top-right-radius:.25rem; 
+  border-bottom-right-radius:.25rem
+}
+
+.toggle-buttons button.active{
+  background-color:#4CAF50 !important; 
+  color:#fff !important
+}
+
+.toggle-buttons button:not(.active){
+  background-color:#f1f1f1 !important; 
+  color:#000 !important
+}
+
+.toggle-buttons button:not(.active):hover{
+  background-color:#ddd !important
+}
+
+/* Apply styles to the output text area */
+textarea#output {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  resize: none; /* Disable textarea resizing */
+  font-family: Arial, sans-serif;
+}
+
+/* Style label for consistency */
+label[for="output"] {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Add this style for the download button */
+#download-button {
+  width: 30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px; 
+  margin: 8px auto;
+  display: block;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+#download-button:hover {
+  background-color: #45a049;
+}
+
+/* Apply styles to the reset buttons container */
+.reset-buttons-container {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center; /* Center the buttons vertically */
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+/* Apply the same styles as the reset button to the new reset buttons */
+.reset-button {
+  background-color: red !important;
+  color: white !important;
+  padding: 14px 20px !important;
+  margin: 20px; /* Remove margin for buttons */
+  border: none !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  transition: .3s ease-in-out;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.reset-button:hover {
+  background-color: #ff6666 !important;
+}
+

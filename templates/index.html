@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IN/OUT Terminal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <main>
+      <div class="toggle-buttons">
+          <button id="in-button" class="active">Terminal IN</button>
+          <button id="out-button">Terminal OUT</button>
+      </div>
+
+      <div id="in-terminal" class="terminal active">
+          <h2>IN Terminal</h2>
+          <form id="in-form">
+              <label for="itr">itr #:</label>
+              <input type="text" id="itr" name="itr">
+              
+              <label for="message">message:</label>
+              <input type="text" id="message" name="message">
+              
+              <label for="hesitations">hesitations:</label>
+              <input type="text" id="hesitations" name="hesitations">
+              
+              <input type="submit" value="Send">
+          </form>
+      </div>
+
+      <div id="out-terminal" class="terminal">
+          <h2>OUT Terminal</h2>
+          <form id="out-form">
+              <label for="itr-out">itr #:</label>
+              <input type="text" id="itr-out" name="itr-out">
+              
+              <label for="message-out">message:</label>
+              <input type="text" id="message-out" name="message-out">
+              
+              <label for="confidence">confidence:</label>
+              <input type="text" id="confidence" name="confidence">
+
+              <label for="output">Output:</label>
+              <textarea id="output" name="output" rows="5" cols="100" readonly></textarea>
+
+              <button id="download-button" type="button" style="display: none;"> Download </button>
+
+              <input type="submit" value="Receive">
+          </form>
+      </div>
+
+      <div class="reset-buttons-container">
+        <button id="reset-data-button" class="reset-button">Reset Data</button>
+        <button id="reset-model-button" class="reset-button">Reset Model</button>
+      </div>
+
+    </main>
+
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>
